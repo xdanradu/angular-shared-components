@@ -6,7 +6,7 @@
     "start": "ng serve",
     "watch-styles": "npx node-sass ./projects/my-library/src/assets/styles/styles.scss ./dist/my-library/styles.css --importer ./node_modules/node-sass-import --watch",
     "copy-styles": "npx node-sass ./projects/my-library/src/assets/styles/styles.scss ./dist/my-library/styles.css --importer ./node_modules/node-sass-import",
-    "copy-assets-images": "npx cpx \"./projects/my-library/src/assets/images/**/*\" \"./dist/my-library/assets/images\" --watch",
+    "copy-assets-images": "npx cpx \"./projects/my-library/src/assets/images/**/*\" \"./dist/my-library/assets/images\"",
     "watch-assets-images": "npx cpx \"./projects/my-library/src/assets/images/**/*\" \"./dist/my-library/assets/images\" --watch",
     "build-and-watch": "concurrently \"npm run build-watch\" \"delay 10 && npm run copy-styles && npm run watch-styles\"  \"delay 10 && npm run copy-assets-images && npm run watch-assets-images\"",
     "build-watch": "ng build my-library --watch",
