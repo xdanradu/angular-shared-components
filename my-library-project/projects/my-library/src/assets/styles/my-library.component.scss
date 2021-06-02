@@ -1,5 +1,16 @@
 lib-my-library {
-  p {
+  div {
     color: blue;
+    img {
+      width: 100px;
+      height:100px;
+      object-fit: cover;
+      border: 5px solid #dedede;
+      transition: all 0.4s ease-in;
+      &:hover {
+        border-color: deepskyblue;
+        cursor: pointer;
+      }
+    }
   }
 }
