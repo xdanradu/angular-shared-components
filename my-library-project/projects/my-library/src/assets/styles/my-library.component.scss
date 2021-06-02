@@ -10,6 +10,7 @@ lib-my-library {
       &:hover {
         border-color: deepskyblue;
         cursor: pointer;
+        filter: grayscale(50%);
       }
     }
   }
